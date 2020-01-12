@@ -1,0 +1,254 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 5E1B3D9E
+P 2750 4000
+F 0 "U1" H 2750 2114 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 2750 2023 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2750 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2750 4000 50  0001 C CNN
+	1    2750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5E1B3F8A
+P 6200 3450
+F 0 "J1" H 6305 4317 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 6305 4226 50  0000 C CNN
+F 2 "" H 6350 3450 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 6350 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5E1B3FF9
+P 6200 4700
+F 0 "#PWR05" H 6200 4450 50  0001 C CNN
+F 1 "GND" H 6205 4527 50  0000 C CNN
+F 2 "" H 6200 4700 50  0001 C CNN
+F 3 "" H 6200 4700 50  0001 C CNN
+	1    6200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5E1B4021
+P 2750 6200
+F 0 "#PWR04" H 2750 5950 50  0001 C CNN
+F 1 "GND" H 2755 6027 50  0000 C CNN
+F 2 "" H 2750 6200 50  0001 C CNN
+F 3 "" H 2750 6200 50  0001 C CNN
+	1    2750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 5E1B41CE
+P 7300 2400
+F 0 "#PWR06" H 7300 2250 50  0001 C CNN
+F 1 "+5V" H 7315 2573 50  0000 C CNN
+F 2 "" H 7300 2400 50  0001 C CNN
+F 3 "" H 7300 2400 50  0001 C CNN
+	1    7300 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5E1B4264
+P 1500 3300
+F 0 "#PWR02" H 1500 3150 50  0001 C CNN
+F 1 "+5V" H 1515 3473 50  0000 C CNN
+F 2 "" H 1500 3300 50  0001 C CNN
+F 3 "" H 1500 3300 50  0001 C CNN
+	1    1500 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR03
+U 1 1 5E1B429E
+P 2750 1800
+F 0 "#PWR03" H 2750 1650 50  0001 C CNN
+F 1 "+5V" H 2765 1973 50  0000 C CNN
+F 2 "" H 2750 1800 50  0001 C CNN
+F 3 "" H 2750 1800 50  0001 C CNN
+	1    2750 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2850 7300 2850
+Wire Wire Line
+	7300 2850 7300 2400
+Wire Wire Line
+	6200 4350 6200 4500
+Wire Wire Line
+	2750 1800 2750 2200
+Wire Wire Line
+	1500 3300 2150 3300
+Wire Wire Line
+	2750 5800 2750 6100
+Wire Wire Line
+	2650 5800 2650 6100
+Wire Wire Line
+	2650 6100 2750 6100
+Connection ~ 2750 6100
+Wire Wire Line
+	2750 6100 2750 6200
+$Comp
+L Device:Crystal Y1
+U 1 1 5E1B46CD
+P 1500 2800
+F 0 "Y1" V 1454 2931 50  0000 L CNN
+F 1 "Crystal" V 1545 2931 50  0000 L CNN
+F 2 "" H 1500 2800 50  0001 C CNN
+F 3 "~" H 1500 2800 50  0001 C CNN
+	1    1500 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E1B4760
+P 1100 2600
+F 0 "C1" V 1250 2600 50  0000 C CNN
+F 1 "22pF" V 1150 2450 50  0000 C CNN
+F 2 "" H 1138 2450 50  0001 C CNN
+F 3 "~" H 1100 2600 50  0001 C CNN
+	1    1100 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E1B47CB
+P 1100 3000
+F 0 "C2" V 1250 3000 50  0000 C CNN
+F 1 "22pF" V 1150 2850 50  0000 C CNN
+F 2 "" H 1138 2850 50  0001 C CNN
+F 3 "~" H 1100 3000 50  0001 C CNN
+	1    1100 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 2600 1500 2600
+Wire Wire Line
+	1500 2600 1500 2650
+Wire Wire Line
+	1500 2600 2050 2600
+Wire Wire Line
+	2050 2600 2050 2700
+Wire Wire Line
+	2050 2700 2150 2700
+Connection ~ 1500 2600
+Wire Wire Line
+	2150 2900 2050 2900
+Wire Wire Line
+	2050 2900 2050 3000
+Wire Wire Line
+	2050 3000 1500 3000
+Wire Wire Line
+	1500 2950 1500 3000
+Connection ~ 1500 3000
+Wire Wire Line
+	1500 3000 1250 3000
+$Comp
+L power:GND #PWR01
+U 1 1 5E1B4C6B
+P 800 3250
+F 0 "#PWR01" H 800 3000 50  0001 C CNN
+F 1 "GND" H 805 3077 50  0000 C CNN
+F 2 "" H 800 3250 50  0001 C CNN
+F 3 "" H 800 3250 50  0001 C CNN
+	1    800  3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  3250 800  3000
+Wire Wire Line
+	800  2600 950  2600
+Wire Wire Line
+	950  3000 800  3000
+Connection ~ 800  3000
+Wire Wire Line
+	800  3000 800  2600
+Wire Wire Line
+	5900 4350 5900 4500
+Wire Wire Line
+	5900 4500 6200 4500
+Connection ~ 6200 4500
+Wire Wire Line
+	6200 4500 6200 4700
+Wire Wire Line
+	6800 3550 7050 3550
+Wire Wire Line
+	7050 3550 7050 3600
+Wire Wire Line
+	7050 3650 6800 3650
+Wire Wire Line
+	6800 3450 7050 3450
+Wire Wire Line
+	7050 3450 7050 3400
+Wire Wire Line
+	7050 3350 6800 3350
+$Comp
+L Device:R R1
+U 1 1 5E1B5D4A
+P 7450 3400
+F 0 "R1" V 7350 3400 50  0000 C CNN
+F 1 "22R" V 7450 3400 50  0000 C CNN
+F 2 "" V 7380 3400 50  0001 C CNN
+F 3 "~" H 7450 3400 50  0001 C CNN
+	1    7450 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E1B5D89
+P 7450 3600
+F 0 "R2" V 7550 3600 50  0000 C CNN
+F 1 "22R" V 7450 3600 50  0000 C CNN
+F 2 "" V 7380 3600 50  0001 C CNN
+F 3 "~" H 7450 3600 50  0001 C CNN
+	1    7450 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 3600 7300 3600
+Connection ~ 7050 3600
+Wire Wire Line
+	7050 3600 7050 3650
+Wire Wire Line
+	7300 3400 7050 3400
+Connection ~ 7050 3400
+Wire Wire Line
+	7050 3400 7050 3350
+Text HLabel 7800 3400 2    50   Input ~ 0
+D-
+Wire Wire Line
+	7600 3400 7800 3400
+Wire Wire Line
+	7800 3600 7600 3600
+Text HLabel 7800 3600 2    50   Input ~ 0
+D+
+Text HLabel 1950 3500 0    50   Input ~ 0
+D+
+Text HLabel 1950 3600 0    50   Input ~ 0
+D-
+Wire Wire Line
+	1950 3500 2150 3500
+Wire Wire Line
+	2150 3600 1950 3600
+$EndSCHEMATC
