@@ -98,21 +98,10 @@ Connection ~ 2750 6100
 Wire Wire Line
 	2750 6100 2750 6200
 $Comp
-L Device:Crystal Y1
-U 1 1 5E1B46CD
-P 1500 2800
-F 0 "Y1" V 1454 2931 50  0000 L CNN
-F 1 "Crystal" V 1545 2931 50  0000 L CNN
-F 2 "" H 1500 2800 50  0001 C CNN
-F 3 "~" H 1500 2800 50  0001 C CNN
-	1    1500 2800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 5E1B4760
 P 1100 2600
-F 0 "C1" V 1250 2600 50  0000 C CNN
+F 0 "C1" V 950 2600 50  0000 C CNN
 F 1 "22pF" V 1150 2450 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1138 2450 50  0001 C CNN
 F 3 "~" H 1100 2600 50  0001 C CNN
@@ -171,7 +160,7 @@ Wire Wire Line
 	950  3000 800  3000
 Connection ~ 800  3000
 Wire Wire Line
-	800  3000 800  2600
+	800  3000 800  2800
 $Comp
 L Device:R R1
 U 1 1 5E1B5D4A
@@ -415,4 +404,31 @@ NoConn ~ 6800 2950
 NoConn ~ 6800 3050
 NoConn ~ 6800 3550
 NoConn ~ 6800 3650
+$Comp
+L Device:Crystal_GND24 Y1
+U 1 1 5E1BB1BD
+P 1500 2800
+F 0 "Y1" V 1650 2850 50  0000 L CNN
+F 1 "8MHz" V 1500 2700 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 1500 2800 50  0001 C CNN
+F 3 "~" H 1500 2800 50  0001 C CNN
+	1    1500 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 2800 1250 2800
+Connection ~ 800  2800
+Wire Wire Line
+	800  2800 800  2600
+Wire Wire Line
+	1700 2800 1800 2800
+Wire Wire Line
+	1800 2800 1800 2400
+Wire Wire Line
+	1800 2400 1250 2400
+Connection ~ 1250 2800
+Wire Wire Line
+	1250 2800 800  2800
+Wire Wire Line
+	1250 2400 1250 2800
 $EndSCHEMATC
