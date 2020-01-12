@@ -202,15 +202,15 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Female J2
 U 1 1 5E1B9285
-P 4350 2700
-F 0 "J2" H 4377 2676 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 4377 2585 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4350 2700 50  0001 C CNN
-F 3 "~" H 4350 2700 50  0001 C CNN
-	1    4350 2700
+P 5050 2700
+F 0 "J2" H 5077 2676 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 5077 2585 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5050 2700 50  0001 C CNN
+F 3 "~" H 5050 2700 50  0001 C CNN
+	1    5050 2700
 	1    0    0    -1  
 $EndComp
-Text Notes 4150 2300 0    50   ~ 0
+Text Notes 4650 2350 0    50   ~ 0
 to programmator
 Wire Wire Line
 	2150 2500 1500 2500
@@ -221,9 +221,9 @@ Wire Wire Line
 Wire Wire Line
 	3900 1000 3900 2600
 Wire Wire Line
-	3900 2600 4150 2600
+	3900 2600 4850 2600
 Wire Wire Line
-	4150 2500 4050 2500
+	4850 2500 4050 2500
 $Comp
 L power:+5V #PWR09
 U 1 1 5E1BA439
@@ -237,19 +237,15 @@ F 3 "" H 4050 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4050 1800 4050 2500
-Wire Wire Line
-	4150 3000 4050 3000
-Wire Wire Line
-	4050 3000 4050 3200
 $Comp
 L power:GND #PWR010
 U 1 1 5E1BAE4D
-P 4050 3200
-F 0 "#PWR010" H 4050 2950 50  0001 C CNN
-F 1 "GND" H 4055 3027 50  0000 C CNN
-F 2 "" H 4050 3200 50  0001 C CNN
-F 3 "" H 4050 3200 50  0001 C CNN
-	1    4050 3200
+P 4700 3300
+F 0 "#PWR010" H 4700 3050 50  0001 C CNN
+F 1 "GND" H 4705 3127 50  0000 C CNN
+F 2 "" H 4700 3300 50  0001 C CNN
+F 3 "" H 4700 3300 50  0001 C CNN
+	1    4700 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -310,9 +306,9 @@ Connection ~ 2850 1950
 Wire Wire Line
 	2850 1950 2750 1950
 Wire Wire Line
-	3350 2700 4150 2700
+	3350 2700 4850 2700
 Wire Wire Line
-	3350 2800 4150 2800
+	3350 2800 4850 2800
 Wire Wire Line
 	2150 3800 1850 3800
 Wire Wire Line
@@ -346,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2600 3750 2900
 Wire Wire Line
-	3750 2900 4150 2900
+	3750 2900 4850 2900
 Wire Wire Line
 	2650 2200 2650 1950
 Connection ~ 2650 1950
@@ -431,4 +427,318 @@ Wire Wire Line
 	1250 2800 800  2800
 Wire Wire Line
 	1250 2400 1250 2800
+$Comp
+L Connector:Conn_01x01_Female J1
+U 1 1 5E1BC3F1
+P 3650 2500
+F 0 "J1" H 3677 2526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 2435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 2500 50  0001 C CNN
+F 3 "~" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5E1BC48F
+P 3650 2900
+F 0 "J3" H 3677 2926 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 2835 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 2900 50  0001 C CNN
+F 3 "~" H 3650 2900 50  0001 C CNN
+	1    3650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J4
+U 1 1 5E1BC4C9
+P 3650 3000
+F 0 "J4" H 3677 3026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 2935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3000 50  0001 C CNN
+F 3 "~" H 3650 3000 50  0001 C CNN
+	1    3650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5E1BC4F5
+P 3650 3100
+F 0 "J5" H 3677 3126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3100 50  0001 C CNN
+F 3 "~" H 3650 3100 50  0001 C CNN
+	1    3650 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5E1BC523
+P 3650 3200
+F 0 "J6" H 3677 3226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3200 50  0001 C CNN
+F 3 "~" H 3650 3200 50  0001 C CNN
+	1    3650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J7
+U 1 1 5E1BC553
+P 3650 3400
+F 0 "J7" H 3677 3426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3400 50  0001 C CNN
+F 3 "~" H 3650 3400 50  0001 C CNN
+	1    3650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J8
+U 1 1 5E1BC589
+P 3650 3500
+F 0 "J8" H 3677 3526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3435 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3500 50  0001 C CNN
+F 3 "~" H 3650 3500 50  0001 C CNN
+	1    3650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J9
+U 1 1 5E1BC5BD
+P 3650 3700
+F 0 "J9" H 3677 3726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3700 50  0001 C CNN
+F 3 "~" H 3650 3700 50  0001 C CNN
+	1    3650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J10
+U 1 1 5E1BC5FD
+P 3650 3800
+F 0 "J10" H 3677 3826 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3735 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3800 50  0001 C CNN
+F 3 "~" H 3650 3800 50  0001 C CNN
+	1    3650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J11
+U 1 1 5E1BC635
+P 3650 3900
+F 0 "J11" H 3677 3926 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3835 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 3900 50  0001 C CNN
+F 3 "~" H 3650 3900 50  0001 C CNN
+	1    3650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J12
+U 1 1 5E1BC66F
+P 3650 4000
+F 0 "J12" H 3677 4026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 3935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4000 50  0001 C CNN
+F 3 "~" H 3650 4000 50  0001 C CNN
+	1    3650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J13
+U 1 1 5E1BC6AB
+P 3650 4100
+F 0 "J13" H 3677 4126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4100 50  0001 C CNN
+F 3 "~" H 3650 4100 50  0001 C CNN
+	1    3650 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J14
+U 1 1 5E1BC6ED
+P 3650 4200
+F 0 "J14" H 3677 4226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4200 50  0001 C CNN
+F 3 "~" H 3650 4200 50  0001 C CNN
+	1    3650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J15
+U 1 1 5E1BC72D
+P 3650 4300
+F 0 "J15" H 3677 4326 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4300 50  0001 C CNN
+F 3 "~" H 3650 4300 50  0001 C CNN
+	1    3650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J16
+U 1 1 5E1BC76F
+P 3650 4400
+F 0 "J16" H 3677 4426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J17
+U 1 1 5E1BC7B5
+P 3650 4600
+F 0 "J17" H 3677 4626 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4535 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4600 50  0001 C CNN
+F 3 "~" H 3650 4600 50  0001 C CNN
+	1    3650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J18
+U 1 1 5E1BC807
+P 3650 4700
+F 0 "J18" H 3677 4726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4635 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4700 50  0001 C CNN
+F 3 "~" H 3650 4700 50  0001 C CNN
+	1    3650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J19
+U 1 1 5E1BC84F
+P 3650 4900
+F 0 "J19" H 3677 4926 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4835 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 4900 50  0001 C CNN
+F 3 "~" H 3650 4900 50  0001 C CNN
+	1    3650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J20
+U 1 1 5E1BC89D
+P 3650 5000
+F 0 "J20" H 3677 5026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 4935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 5000 50  0001 C CNN
+F 3 "~" H 3650 5000 50  0001 C CNN
+	1    3650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J21
+U 1 1 5E1BC8E9
+P 3650 5100
+F 0 "J21" H 3677 5126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 5035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 5100 50  0001 C CNN
+F 3 "~" H 3650 5100 50  0001 C CNN
+	1    3650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J22
+U 1 1 5E1BC937
+P 3650 5200
+F 0 "J22" H 3677 5226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 5135 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 5200 50  0001 C CNN
+F 3 "~" H 3650 5200 50  0001 C CNN
+	1    3650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J23
+U 1 1 5E1BC987
+P 3650 5300
+F 0 "J23" H 3677 5326 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 5235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 5300 50  0001 C CNN
+F 3 "~" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J24
+U 1 1 5E1BC9D9
+P 3650 5400
+F 0 "J24" H 3677 5426 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3677 5335 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 5400 50  0001 C CNN
+F 3 "~" H 3650 5400 50  0001 C CNN
+	1    3650 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5400 3350 5400
+Wire Wire Line
+	3350 5300 3450 5300
+Wire Wire Line
+	3350 5200 3450 5200
+Wire Wire Line
+	3450 5100 3350 5100
+Wire Wire Line
+	3350 5000 3450 5000
+Wire Wire Line
+	3450 4900 3350 4900
+Wire Wire Line
+	3350 4700 3450 4700
+Wire Wire Line
+	3450 4600 3350 4600
+Wire Wire Line
+	3350 4400 3450 4400
+Wire Wire Line
+	3450 4300 3350 4300
+Wire Wire Line
+	3350 4200 3450 4200
+Wire Wire Line
+	3450 4100 3350 4100
+Wire Wire Line
+	3350 4000 3450 4000
+Wire Wire Line
+	3450 3900 3350 3900
+Wire Wire Line
+	3350 3800 3450 3800
+Wire Wire Line
+	3450 3700 3350 3700
+Wire Wire Line
+	3450 3500 3350 3500
+Wire Wire Line
+	3350 3400 3450 3400
+Wire Wire Line
+	3450 3200 3350 3200
+Wire Wire Line
+	3350 3100 3450 3100
+Wire Wire Line
+	3450 3000 3350 3000
+Wire Wire Line
+	3350 2900 3450 2900
+Wire Wire Line
+	3450 2500 3350 2500
+Wire Wire Line
+	4700 3300 4700 3000
+Wire Wire Line
+	4700 3000 4850 3000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5E1FD54A
+P 5450 4400
+F 0 "SW?" H 5450 4685 50  0000 C CNN
+F 1 "SW_Push" H 5450 4594 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 5450 4600 50  0001 C CNN
+F 3 "" H 5450 4600 50  0001 C CNN
+	1    5450 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
