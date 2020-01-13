@@ -306,9 +306,9 @@ Connection ~ 2850 1950
 Wire Wire Line
 	2850 1950 2750 1950
 Wire Wire Line
-	3350 2700 4850 2700
+	3350 2700 4350 2700
 Wire Wire Line
-	3350 2800 4850 2800
+	3350 2800 4500 2800
 Wire Wire Line
 	2150 3800 1850 3800
 Wire Wire Line
@@ -342,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2600 3750 2900
 Wire Wire Line
-	3750 2900 4850 2900
+	3750 2900 4200 2900
 Wire Wire Line
 	2650 2200 2650 1950
 Connection ~ 2650 1950
@@ -731,14 +731,62 @@ Wire Wire Line
 Wire Wire Line
 	4700 3000 4850 3000
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push SW1
 U 1 1 5E1FD54A
 P 5450 4400
-F 0 "SW?" H 5450 4685 50  0000 C CNN
+F 0 "SW1" H 5450 4685 50  0000 C CNN
 F 1 "SW_Push" H 5450 4594 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 5450 4600 50  0001 C CNN
 F 3 "" H 5450 4600 50  0001 C CNN
 	1    5450 4400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x01_Female J25
+U 1 1 5E1D284B
+P 4200 2100
+F 0 "J25" H 4227 2126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4227 2035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 4200 2100 50  0001 C CNN
+F 3 "~" H 4200 2100 50  0001 C CNN
+	1    4200 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J26
+U 1 1 5E1D2949
+P 4350 2100
+F 0 "J26" H 4377 2126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4377 2035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 4350 2100 50  0001 C CNN
+F 3 "~" H 4350 2100 50  0001 C CNN
+	1    4350 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J27
+U 1 1 5E1D29A9
+P 4500 2100
+F 0 "J27" H 4527 2126 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4527 2035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 4500 2100 50  0001 C CNN
+F 3 "~" H 4500 2100 50  0001 C CNN
+	1    4500 2100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4200 2300 4200 2900
+Connection ~ 4200 2900
+Wire Wire Line
+	4200 2900 4850 2900
+Wire Wire Line
+	4350 2300 4350 2700
+Connection ~ 4350 2700
+Wire Wire Line
+	4350 2700 4850 2700
+Wire Wire Line
+	4500 2300 4500 2800
+Connection ~ 4500 2800
+Wire Wire Line
+	4500 2800 4850 2800
 $EndSCHEMATC
