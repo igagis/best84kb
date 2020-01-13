@@ -733,12 +733,12 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5E1FD54A
-P 5450 4400
-F 0 "SW1" H 5450 4685 50  0000 C CNN
-F 1 "SW_Push" H 5450 4594 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 5450 4600 50  0001 C CNN
-F 3 "" H 5450 4600 50  0001 C CNN
-	1    5450 4400
+P 6000 5000
+F 0 "SW1" H 6000 5285 50  0000 C CNN
+F 1 "SW_Push" H 6000 5194 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 6000 5200 50  0001 C CNN
+F 3 "" H 6000 5200 50  0001 C CNN
+	1    6000 5000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -789,4 +789,99 @@ Wire Wire Line
 Connection ~ 4500 2800
 Wire Wire Line
 	4500 2800 4850 2800
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E1D30B4
+P 5900 6200
+F 0 "SW2" H 5900 6485 50  0000 C CNN
+F 1 "SW_Push" H 5900 6394 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.75u_Plate" H 5900 6400 50  0001 C CNN
+F 3 "" H 5900 6400 50  0001 C CNN
+	1    5900 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E1D3124
+P 6400 5800
+F 0 "SW3" H 6400 6085 50  0000 C CNN
+F 1 "SW_Push" H 6400 5994 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_2.25u_Plate" H 6400 6000 50  0001 C CNN
+F 3 "" H 6400 6000 50  0001 C CNN
+	1    6400 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E1D319E
+P 5300 5800
+F 0 "SW4" H 5300 6085 50  0000 C CNN
+F 1 "SW_Push" H 5300 5994 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 5300 6000 50  0001 C CNN
+F 3 "" H 5300 6000 50  0001 C CNN
+	1    5300 5800
+	0    1    1    0   
+$EndComp
+Text Notes 5950 4600 0    50   ~ 0
+] key
+Text Notes 5800 6400 1    50   ~ 0
+shift key
+Text Notes 6850 5850 1    50   ~ 0
+enter key
+Text Notes 5150 5900 1    50   ~ 0
+' key
+Wire Wire Line
+	5800 5000 5700 5000
+Wire Wire Line
+	5700 5000 5700 5100
+Wire Wire Line
+	6400 6000 6400 6100
+Wire Wire Line
+	5900 6400 5900 6500
+Wire Wire Line
+	5300 6000 5300 6100
+$Comp
+L Diode:LL4148 D1
+U 1 1 5E20C4BA
+P 5300 6250
+F 0 "D1" V 5346 6171 50  0000 R CNN
+F 1 "LL4148" V 5255 6171 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5300 6075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5300 6250 50  0001 C CNN
+	1    5300 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D3
+U 1 1 5E20C73F
+P 5900 6650
+F 0 "D3" V 5946 6571 50  0000 R CNN
+F 1 "LL4148" V 5855 6571 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5900 6475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5900 6650 50  0001 C CNN
+	1    5900 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D4
+U 1 1 5E20C7C9
+P 6400 6250
+F 0 "D4" V 6446 6171 50  0000 R CNN
+F 1 "LL4148" V 6355 6171 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 6400 6075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 6400 6250 50  0001 C CNN
+	1    6400 6250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D2
+U 1 1 5E20C84D
+P 5700 5250
+F 0 "D2" V 5746 5171 50  0000 R CNN
+F 1 "LL4148" V 5655 5171 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5700 5075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5700 5250 50  0001 C CNN
+	1    5700 5250
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
