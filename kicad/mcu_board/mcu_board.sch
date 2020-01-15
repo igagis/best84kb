@@ -83,7 +83,7 @@ $EndComp
 Wire Wire Line
 	6800 2850 7300 2850
 Wire Wire Line
-	7300 2850 7300 2300
+	7300 2850 7300 2450
 Wire Wire Line
 	2750 1800 2750 1950
 Wire Wire Line
@@ -342,7 +342,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 2600 3750 2900
 Wire Wire Line
-	3750 2900 4200 2900
+	3750 2900 3950 2900
 Wire Wire Line
 	2650 2200 2650 1950
 Connection ~ 2650 1950
@@ -430,12 +430,12 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Female J1
 U 1 1 5E1BC3F1
-P 3650 2500
-F 0 "J1" H 3677 2526 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3677 2435 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3650 2500 50  0001 C CNN
-F 3 "~" H 3650 2500 50  0001 C CNN
-	1    3650 2500
+P 3750 2500
+F 0 "J1" H 3777 2526 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3777 2435 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 3750 2500 50  0001 C CNN
+F 3 "~" H 3750 2500 50  0001 C CNN
+	1    3750 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -709,9 +709,9 @@ Wire Wire Line
 Wire Wire Line
 	3450 3700 3350 3700
 Wire Wire Line
-	3450 3500 3350 3500
+	3450 3500 3400 3500
 Wire Wire Line
-	3350 3400 3450 3400
+	3350 3400 3400 3400
 Wire Wire Line
 	3450 3200 3350 3200
 Wire Wire Line
@@ -721,7 +721,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 2900 3450 2900
 Wire Wire Line
-	3450 2500 3350 2500
+	3550 2500 3450 2500
 Wire Wire Line
 	4700 3300 4700 3000
 Wire Wire Line
@@ -789,12 +789,12 @@ $Comp
 L Switch:SW_Push SW2
 U 1 1 5E1D30B4
 P 5900 6200
-F 0 "SW2" H 5900 6485 50  0000 C CNN
-F 1 "SW_Push" H 5900 6394 50  0000 C CNN
+F 0 "SW2" H 5900 6000 50  0000 C CNN
+F 1 "SW_Push" H 5900 6100 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.75u_Plate" H 5900 6400 50  0001 C CNN
 F 3 "" H 5900 6400 50  0001 C CNN
 	1    5900 6200
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW3
@@ -805,43 +805,37 @@ F 1 "SW_Push" H 6400 5994 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_2.25u_Plate" H 6400 6000 50  0001 C CNN
 F 3 "" H 6400 6000 50  0001 C CNN
 	1    6400 5800
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Switch:SW_Push SW4
 U 1 1 5E1D319E
 P 5300 5800
-F 0 "SW4" H 5300 6085 50  0000 C CNN
-F 1 "SW_Push" H 5300 5994 50  0000 C CNN
+F 0 "SW4" H 5300 5600 50  0000 C CNN
+F 1 "SW_Push" H 5300 5700 50  0000 C CNN
 F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 5300 6000 50  0001 C CNN
 F 3 "" H 5300 6000 50  0001 C CNN
 	1    5300 5800
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Text Notes 5950 4600 0    50   ~ 0
 ] key
 Text Notes 5800 6400 1    50   ~ 0
 shift key
-Text Notes 6850 5850 1    50   ~ 0
+Text Notes 6600 5950 1    50   ~ 0
 enter key
-Text Notes 5150 5900 1    50   ~ 0
+Text Notes 5200 5750 1    50   ~ 0
 ' key
 Wire Wire Line
 	5800 5000 5700 5000
 Wire Wire Line
 	5700 5000 5700 5100
-Wire Wire Line
-	6400 6000 6400 6100
-Wire Wire Line
-	5900 6400 5900 6500
-Wire Wire Line
-	5300 6000 5300 6100
 $Comp
 L Diode:LL4148 D1
 U 1 1 5E20C4BA
 P 5300 6250
-F 0 "D1" V 5346 6171 50  0000 R CNN
-F 1 "LL4148" V 5255 6171 50  0000 R CNN
+F 0 "D1" V 5200 6350 50  0000 R CNN
+F 1 "LL4148" H 5450 6150 50  0000 R CNN
 F 2 "Diode_SMD:D_MiniMELF" H 5300 6075 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5300 6250 50  0001 C CNN
 	1    5300 6250
@@ -850,12 +844,12 @@ $EndComp
 $Comp
 L Diode:LL4148 D3
 U 1 1 5E20C73F
-P 5900 6650
-F 0 "D3" V 5946 6571 50  0000 R CNN
-F 1 "LL4148" V 5855 6571 50  0000 R CNN
-F 2 "Diode_SMD:D_MiniMELF" H 5900 6475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5900 6650 50  0001 C CNN
-	1    5900 6650
+P 5900 6800
+F 0 "D3" V 5946 6721 50  0000 R CNN
+F 1 "LL4148" V 5855 6721 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 5900 6625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5900 6800 50  0001 C CNN
+	1    5900 6800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -931,12 +925,12 @@ $EndComp
 $Comp
 L Device:R R5
 U 1 1 5E1FF534
-P 9400 4050
-F 0 "R5" H 9470 4096 50  0000 L CNN
-F 1 "5.1k" H 9470 4005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 4050 50  0001 C CNN
-F 3 "~" H 9400 4050 50  0001 C CNN
-	1    9400 4050
+P 9100 3500
+F 0 "R5" H 9170 3546 50  0000 L CNN
+F 1 "5.1k" H 9170 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 3500 50  0001 C CNN
+F 3 "~" H 9100 3500 50  0001 C CNN
+	1    9100 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -944,9 +938,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 4450 8100 4450
 Wire Wire Line
-	9100 4450 9400 4450
-Wire Wire Line
-	9400 4450 9400 4200
+	9100 4450 9100 3650
 Wire Wire Line
 	7850 3900 7850 3800
 Wire Wire Line
@@ -957,11 +949,11 @@ Connection ~ 7400 3450
 Wire Wire Line
 	7400 3450 7000 3450
 Wire Wire Line
-	9400 3900 9400 2800
+	9100 3350 9100 3300
 Wire Wire Line
-	9400 2800 7400 2800
+	9100 3300 7400 3300
 Wire Wire Line
-	7400 2800 7400 3150
+	7400 3300 7400 3150
 Connection ~ 7400 3150
 Wire Wire Line
 	7400 3150 6900 3150
@@ -1169,8 +1161,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 7650 5600 7400
 Wire Wire Line
-	5900 6000 5900 5500
-Wire Wire Line
 	5900 5500 6300 5500
 Wire Wire Line
 	6300 5500 6300 5300
@@ -1178,8 +1168,6 @@ Wire Wire Line
 	6300 5000 6200 5000
 Wire Wire Line
 	3350 5100 3800 5100
-Wire Wire Line
-	6400 5600 6400 5500
 Wire Wire Line
 	6400 5500 6300 5500
 Connection ~ 6300 5500
@@ -1190,67 +1178,67 @@ Wire Wire Line
 $Comp
 L Switch:SW_Push SW5
 U 1 1 5E2A4AED
-P 8200 2150
-F 0 "SW5" H 8200 2435 50  0000 C CNN
-F 1 "SW_Push" H 8200 2344 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 8200 2350 50  0001 C CNN
-F 3 "" H 8200 2350 50  0001 C CNN
-	1    8200 2150
+P 9900 2750
+F 0 "SW5" H 9900 3035 50  0000 C CNN
+F 1 "SW_Push" H 9900 2944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 9900 2950 50  0001 C CNN
+F 3 "" H 9900 2950 50  0001 C CNN
+	1    9900 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Switch:SW_Push SW6
 U 1 1 5E2A4BCD
-P 8950 2150
-F 0 "SW6" H 8950 2435 50  0000 C CNN
-F 1 "SW_Push" H 8950 2344 50  0000 C CNN
-F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 8950 2350 50  0001 C CNN
-F 3 "" H 8950 2350 50  0001 C CNN
-	1    8950 2150
+P 10650 2750
+F 0 "SW6" H 10650 3035 50  0000 C CNN
+F 1 "SW_Push" H 10650 2944 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 10650 2950 50  0001 C CNN
+F 3 "" H 10650 2950 50  0001 C CNN
+	1    10650 2750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:LL4148 D11
 U 1 1 5E2A4C67
-P 8050 2450
-F 0 "D11" V 8096 2371 50  0000 R CNN
-F 1 "LL4148" V 8005 2371 50  0000 R CNN
-F 2 "Diode_SMD:D_MiniMELF" H 8050 2275 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 8050 2450 50  0001 C CNN
-	1    8050 2450
+P 9550 3050
+F 0 "D11" V 9596 2971 50  0000 R CNN
+F 1 "LL4148" V 9505 2971 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 9550 2875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 9550 3050 50  0001 C CNN
+	1    9550 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Diode:LL4148 D12
 U 1 1 5E2A4D4B
-P 8750 2450
-F 0 "D12" V 8796 2371 50  0000 R CNN
-F 1 "LL4148" V 8705 2371 50  0000 R CNN
-F 2 "Diode_SMD:D_MiniMELF" H 8750 2275 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 8750 2450 50  0001 C CNN
-	1    8750 2450
+P 10350 3050
+F 0 "D12" V 10396 2971 50  0000 R CNN
+F 1 "LL4148" V 10305 2971 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 10350 2875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 10350 3050 50  0001 C CNN
+	1    10350 3050
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D10
 U 1 1 5E2A4DE7
-P 7900 1600
-F 0 "D10" V 7938 1483 50  0000 R CNN
-F 1 "LED" V 7847 1483 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 7900 1600 50  0001 C CNN
-F 3 "~" H 7900 1600 50  0001 C CNN
-	1    7900 1600
+P 8650 1100
+F 0 "D10" V 8688 983 50  0000 R CNN
+F 1 "LED" V 8597 983 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8650 1100 50  0001 C CNN
+F 3 "~" H 8650 1100 50  0001 C CNN
+	1    8650 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D13
 U 1 1 5E2A4EFF
-P 9450 1600
-F 0 "D13" V 9488 1483 50  0000 R CNN
-F 1 "LED" V 9397 1483 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" H 9450 1600 50  0001 C CNN
-F 3 "~" H 9450 1600 50  0001 C CNN
-	1    9450 1600
+P 9900 1100
+F 0 "D13" V 9938 983 50  0000 R CNN
+F 1 "LED" V 9847 983 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 9900 1100 50  0001 C CNN
+F 3 "~" H 9900 1100 50  0001 C CNN
+	1    9900 1100
 	0    -1   -1   0   
 $EndComp
 Text HLabel 5850 7650 2    50   Input ~ 0
@@ -1258,7 +1246,7 @@ BL_cathode
 Wire Wire Line
 	5850 7650 5600 7650
 Connection ~ 5600 7650
-Text HLabel 9950 1800 2    50   Input ~ 0
+Text HLabel 10350 1350 2    50   Input ~ 0
 BL_cathode
 Text HLabel 6500 5300 2    50   Input ~ 0
 col_13
@@ -1280,8 +1268,6 @@ Text HLabel 5400 5500 2    50   Input ~ 0
 col_12
 Wire Wire Line
 	5400 5500 5300 5500
-Wire Wire Line
-	5300 5500 5300 5600
 Text HLabel 4300 5100 2    50   Input ~ 0
 col_12
 Wire Wire Line
@@ -1300,20 +1286,16 @@ row_3
 Wire Wire Line
 	6550 6650 6550 6500
 Wire Wire Line
-	6550 6500 6400 6500
-Wire Wire Line
 	5300 6500 5300 6400
 Wire Wire Line
 	6400 6400 6400 6500
 Connection ~ 6400 6500
-Wire Wire Line
-	5300 6500 6400 6500
 Text HLabel 6100 7000 2    50   Input ~ 0
 row_4
 Wire Wire Line
 	6100 7000 5900 7000
 Wire Wire Line
-	5900 7000 5900 6800
+	5900 7000 5900 6950
 Text HLabel 4750 2100 1    50   Input ~ 0
 row_2
 Wire Wire Line
@@ -1341,4 +1323,300 @@ Wire Wire Line
 	4450 2900 4850 2900
 Wire Wire Line
 	7300 2000 7300 1750
+$Comp
+L Device:CP C5
+U 1 1 5E2023DE
+P 6900 2100
+F 0 "C5" H 6782 2054 50  0000 R CNN
+F 1 "22uF" H 6782 2145 50  0000 R CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 6938 1950 50  0001 C CNN
+F 3 "~" H 6900 2100 50  0001 C CNN
+	1    6900 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2250 6900 2450
+Wire Wire Line
+	6900 2450 7300 2450
+Connection ~ 7300 2450
+Wire Wire Line
+	7300 2450 7300 2300
+$Comp
+L power:GND #PWR015
+U 1 1 5E20C18B
+P 6900 1750
+F 0 "#PWR015" H 6900 1500 50  0001 C CNN
+F 1 "GND" H 6905 1577 50  0000 C CNN
+F 2 "" H 6900 1750 50  0001 C CNN
+F 3 "" H 6900 1750 50  0001 C CNN
+	1    6900 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 1750 6900 1950
+Wire Wire Line
+	9550 2900 9550 2750
+Wire Wire Line
+	9550 2750 9700 2750
+Wire Wire Line
+	10350 2900 10350 2750
+Wire Wire Line
+	10350 2750 10450 2750
+Wire Wire Line
+	6550 6500 6400 6500
+Wire Wire Line
+	5300 6000 5300 6100
+Wire Wire Line
+	5300 5600 5300 5500
+Wire Wire Line
+	5300 6500 6400 6500
+Wire Wire Line
+	5900 6650 5900 6400
+Wire Wire Line
+	5900 6000 5900 5500
+Wire Wire Line
+	6400 6000 6400 6100
+Wire Wire Line
+	6400 5600 6400 5500
+Wire Wire Line
+	8650 1250 9050 1250
+Wire Wire Line
+	9900 1250 9900 1350
+Wire Wire Line
+	9900 1350 10350 1350
+Connection ~ 9900 1250
+Wire Wire Line
+	8650 950  9050 950 
+$Comp
+L power:+5V #PWR016
+U 1 1 5E30564C
+P 9300 800
+F 0 "#PWR016" H 9300 650 50  0001 C CNN
+F 1 "+5V" H 9315 973 50  0000 C CNN
+F 2 "" H 9300 800 50  0001 C CNN
+F 3 "" H 9300 800 50  0001 C CNN
+	1    9300 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 800  9300 950 
+Connection ~ 9300 950 
+Wire Wire Line
+	9300 950  9600 950 
+$Comp
+L Switch:SW_Push SW7
+U 1 1 5E35A89D
+P 9900 2000
+F 0 "SW7" H 9900 2285 50  0000 C CNN
+F 1 "SW_Push" H 9900 2194 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 9900 2200 50  0001 C CNN
+F 3 "" H 9900 2200 50  0001 C CNN
+	1    9900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 5E35A96D
+P 10650 2000
+F 0 "SW8" H 10650 2285 50  0000 C CNN
+F 1 "SW_Push" H 10650 2194 50  0000 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX1A_1.00u_Plate" H 10650 2200 50  0001 C CNN
+F 3 "" H 10650 2200 50  0001 C CNN
+	1    10650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:LL4148 D17
+U 1 1 5E35AA23
+P 10350 2250
+F 0 "D17" V 10396 2171 50  0000 R CNN
+F 1 "LL4148" V 10305 2171 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 10350 2075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 10350 2250 50  0001 C CNN
+	1    10350 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:LL4148 D15
+U 1 1 5E35AADD
+P 9550 2250
+F 0 "D15" V 9596 2171 50  0000 R CNN
+F 1 "LL4148" V 9505 2171 50  0000 R CNN
+F 2 "Diode_SMD:D_MiniMELF" H 9550 2075 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 9550 2250 50  0001 C CNN
+	1    9550 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 5E35AF0D
+P 9050 1100
+F 0 "D14" V 9088 983 50  0000 R CNN
+F 1 "LED" V 8997 983 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 9050 1100 50  0001 C CNN
+F 3 "~" H 9050 1100 50  0001 C CNN
+	1    9050 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9050 1250
+Wire Wire Line
+	9050 1250 9600 1250
+Connection ~ 9050 950 
+Wire Wire Line
+	9050 950  9300 950 
+$Comp
+L Device:LED D16
+U 1 1 5E35AFBB
+P 9600 1100
+F 0 "D16" V 9638 983 50  0000 R CNN
+F 1 "LED" V 9547 983 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 9600 1100 50  0001 C CNN
+F 3 "~" H 9600 1100 50  0001 C CNN
+	1    9600 1100
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9600 1250
+Wire Wire Line
+	9600 1250 9900 1250
+Connection ~ 9600 950 
+Wire Wire Line
+	9600 950  9900 950 
+Wire Wire Line
+	10350 2100 10350 2000
+Wire Wire Line
+	10350 2000 10450 2000
+Wire Wire Line
+	9550 2100 9550 2000
+Wire Wire Line
+	9550 2000 9700 2000
+Wire Wire Line
+	10350 2400 9550 2400
+Wire Wire Line
+	10350 3200 9550 3200
+Wire Wire Line
+	10100 2000 10100 2750
+Wire Wire Line
+	10850 2750 10850 2000
+Text HLabel 3350 2250 1    50   Input ~ 0
+row_0
+Wire Wire Line
+	3350 2250 3350 2400
+Wire Wire Line
+	3350 2400 3450 2400
+Wire Wire Line
+	3450 2400 3450 2500
+Connection ~ 3450 2500
+Wire Wire Line
+	3450 2500 3350 2500
+Text HLabel 3950 2200 1    50   Input ~ 0
+row_1
+Wire Wire Line
+	3950 2200 3950 2900
+Connection ~ 3950 2900
+Wire Wire Line
+	3950 2900 4200 2900
+Text HLabel 9250 3200 0    50   Input ~ 0
+row_1
+Text HLabel 9250 2400 0    50   Input ~ 0
+row_0
+Wire Wire Line
+	9250 2400 9400 2400
+Connection ~ 9550 2400
+Wire Wire Line
+	9250 3200 9400 3200
+Connection ~ 9550 3200
+Text HLabel 10100 1750 1    50   Input ~ 0
+col_1
+Text HLabel 10850 1750 1    50   Input ~ 0
+col_2
+Wire Wire Line
+	10100 1750 10100 2000
+Connection ~ 10100 2000
+Wire Wire Line
+	10850 1750 10850 2000
+Connection ~ 10850 2000
+Text HLabel 3900 3300 2    50   Input ~ 0
+col_1
+Text HLabel 3900 3550 2    50   Input ~ 0
+col_2
+Wire Wire Line
+	3900 3300 3400 3300
+Wire Wire Line
+	3400 3300 3400 3400
+Connection ~ 3400 3400
+Wire Wire Line
+	3400 3400 3450 3400
+Wire Wire Line
+	3900 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 3500
+Connection ~ 3400 3500
+Wire Wire Line
+	3400 3500 3350 3500
+$Comp
+L Connector:Conn_01x01_Female J29
+U 1 1 5E4180D2
+P 9000 2050
+F 0 "J29" H 9027 2076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9027 1985 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 9000 2050 50  0001 C CNN
+F 3 "~" H 9000 2050 50  0001 C CNN
+	1    9000 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J30
+U 1 1 5E4182A2
+P 9000 2900
+F 0 "J30" H 9027 2926 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9027 2835 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 9000 2900 50  0001 C CNN
+F 3 "~" H 9000 2900 50  0001 C CNN
+	1    9000 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J31
+U 1 1 5E4188BE
+P 10250 1700
+F 0 "J31" H 10277 1726 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10277 1635 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 10250 1700 50  0001 C CNN
+F 3 "~" H 10250 1700 50  0001 C CNN
+	1    10250 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J32
+U 1 1 5E4189D1
+P 11000 1650
+F 0 "J32" H 11027 1676 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 11027 1585 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Horizontal" H 11000 1650 50  0001 C CNN
+F 3 "~" H 11000 1650 50  0001 C CNN
+	1    11000 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2900 9400 2900
+Wire Wire Line
+	9400 2900 9400 3200
+Connection ~ 9400 3200
+Wire Wire Line
+	9400 3200 9550 3200
+Wire Wire Line
+	9200 2050 9400 2050
+Wire Wire Line
+	9400 2050 9400 2400
+Connection ~ 9400 2400
+Wire Wire Line
+	9400 2400 9550 2400
+Wire Wire Line
+	10250 1900 10250 2000
+Wire Wire Line
+	10250 2000 10100 2000
+Wire Wire Line
+	11000 1850 11000 2000
+Wire Wire Line
+	11000 2000 10850 2000
 $EndSCHEMATC
