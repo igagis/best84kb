@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:mcu_board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -50,12 +49,12 @@ $EndComp
 $Comp
 L power:+5V #PWR06
 U 1 1 5E1B41CE
-P 7300 2400
-F 0 "#PWR06" H 7300 2250 50  0001 C CNN
-F 1 "+5V" H 7315 2573 50  0000 C CNN
-F 2 "" H 7300 2400 50  0001 C CNN
-F 3 "" H 7300 2400 50  0001 C CNN
-	1    7300 2400
+P 7300 1750
+F 0 "#PWR06" H 7300 1600 50  0001 C CNN
+F 1 "+5V" H 7315 1923 50  0000 C CNN
+F 2 "" H 7300 1750 50  0001 C CNN
+F 3 "" H 7300 1750 50  0001 C CNN
+	1    7300 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -83,7 +82,7 @@ $EndComp
 Wire Wire Line
 	6800 2850 7300 2850
 Wire Wire Line
-	7300 2850 7300 2400
+	7300 2850 7300 2300
 Wire Wire Line
 	2750 1800 2750 1950
 Wire Wire Line
@@ -379,7 +378,7 @@ Wire Wire Line
 	7300 3750 7300 2850
 Connection ~ 7300 2850
 Wire Wire Line
-	7500 3450 7000 3450
+	7500 3450 7400 3450
 Wire Wire Line
 	6800 3250 7000 3250
 Wire Wire Line
@@ -388,7 +387,7 @@ Connection ~ 7000 3450
 Wire Wire Line
 	7000 3450 6800 3450
 Wire Wire Line
-	7500 3150 6900 3150
+	7500 3150 7400 3150
 Wire Wire Line
 	6800 3350 6900 3350
 Wire Wire Line
@@ -884,4 +883,104 @@ F 3 "http://www.vishay.com/docs/85557/ll4148.pdf" H 5700 5250 50  0001 C CNN
 	1    5700 5250
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Power_Protection:PRTR5V0U2X D5
+U 1 1 5E1F7AAC
+P 8600 4450
+F 0 "D5" H 9141 4496 50  0000 L CNN
+F 1 "PRTR5V0U2X" H 8850 4050 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 8660 4450 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 8660 4450 50  0001 C CNN
+	1    8600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E1F7B54
+P 8600 5250
+F 0 "#PWR012" H 8600 5000 50  0001 C CNN
+F 1 "GND" H 8605 5077 50  0000 C CNN
+F 2 "" H 8600 5250 50  0001 C CNN
+F 3 "" H 8600 5250 50  0001 C CNN
+	1    8600 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 5250 8600 4950
+$Comp
+L power:+5V #PWR011
+U 1 1 5E1FB37C
+P 8600 3700
+F 0 "#PWR011" H 8600 3550 50  0001 C CNN
+F 1 "+5V" H 8615 3873 50  0000 C CNN
+F 2 "" H 8600 3700 50  0001 C CNN
+F 3 "" H 8600 3700 50  0001 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 3700 8600 3950
+$Comp
+L Device:R R4
+U 1 1 5E1FF3D3
+P 7850 4050
+F 0 "R4" H 7920 4096 50  0000 L CNN
+F 1 "5.1k" H 7920 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4050 50  0001 C CNN
+F 3 "~" H 7850 4050 50  0001 C CNN
+	1    7850 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E1FF534
+P 9400 4050
+F 0 "R5" H 9470 4096 50  0000 L CNN
+F 1 "5.1k" H 9470 4005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9330 4050 50  0001 C CNN
+F 3 "~" H 9400 4050 50  0001 C CNN
+	1    9400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4200 7850 4450
+Wire Wire Line
+	7850 4450 8100 4450
+Wire Wire Line
+	9100 4450 9400 4450
+Wire Wire Line
+	9400 4450 9400 4200
+Wire Wire Line
+	7850 3900 7850 3800
+Wire Wire Line
+	7850 3800 7400 3800
+Wire Wire Line
+	7400 3800 7400 3450
+Connection ~ 7400 3450
+Wire Wire Line
+	7400 3450 7000 3450
+Wire Wire Line
+	9400 3900 9400 2800
+Wire Wire Line
+	9400 2800 7400 2800
+Wire Wire Line
+	7400 2800 7400 3150
+Connection ~ 7400 3150
+Wire Wire Line
+	7400 3150 6900 3150
+Text Notes 8850 5150 0    50   ~ 0
+ESD protection
+$Comp
+L Device:Polyfuse F1
+U 1 1 5E21104B
+P 7300 2150
+F 0 "F1" H 7388 2196 50  0000 L CNN
+F 1 "500mA" H 7388 2105 50  0000 L CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 7350 1950 50  0001 L CNN
+F 3 "~" H 7300 2150 50  0001 C CNN
+	1    7300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2000 7300 1750
 $EndSCHEMATC
