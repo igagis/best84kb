@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mcu_board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -325,11 +326,11 @@ $EndComp
 Wire Wire Line
 	1850 4700 1850 4500
 Wire Wire Line
-	3350 2600 3750 2600
+	3350 2600 3850 2600
 Wire Wire Line
-	3750 2600 3750 2900
+	3850 2600 3850 2900
 Wire Wire Line
-	3750 2900 3950 2900
+	3850 2900 3950 2900
 Wire Wire Line
 	2650 2200 2650 1950
 Connection ~ 2650 1950
@@ -417,47 +418,25 @@ F 3 "~" H 3750 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 5E1BC48F
-P 3650 2900
-F 0 "J3" H 3677 2926 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3677 2835 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 3650 2900 50  0001 C CNN
-F 3 "~" H 3650 2900 50  0001 C CNN
-	1    3650 2900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x01_Female J4
 U 1 1 5E1BC4C9
-P 3650 3000
-F 0 "J4" H 3677 3026 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3677 2935 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 3650 3000 50  0001 C CNN
-F 3 "~" H 3650 3000 50  0001 C CNN
-	1    3650 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J5
-U 1 1 5E1BC4F5
-P 5400 3100
-F 0 "J5" H 5427 3126 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 5427 3035 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5400 3100 50  0001 C CNN
-F 3 "~" H 5400 3100 50  0001 C CNN
-	1    5400 3100
+P 4500 3000
+F 0 "J4" H 4527 3026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4527 2935 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 4500 3000 50  0001 C CNN
+F 3 "~" H 4500 3000 50  0001 C CNN
+	1    4500 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x01_Female J6
 U 1 1 5E1BC523
-P 3650 3200
-F 0 "J6" H 3677 3226 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3677 3135 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 3650 3200 50  0001 C CNN
-F 3 "~" H 3650 3200 50  0001 C CNN
-	1    3650 3200
+P 4550 3200
+F 0 "J6" H 4577 3226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4577 3135 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 4550 3200 50  0001 C CNN
+F 3 "~" H 4550 3200 50  0001 C CNN
+	1    4550 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -617,12 +596,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x01_Female J21
 U 1 1 5E1BC8E9
-P 6400 4800
-F 0 "J21" H 6427 4826 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6427 4735 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6400 4800 50  0001 C CNN
-F 3 "~" H 6400 4800 50  0001 C CNN
-	1    6400 4800
+P 6550 4800
+F 0 "J21" H 6577 4826 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 6577 4735 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 6550 4800 50  0001 C CNN
+F 3 "~" H 6550 4800 50  0001 C CNN
+	1    6550 4800
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -659,45 +638,37 @@ F 3 "~" H 3650 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 5400 3350 5400
-Wire Wire Line
-	3350 5300 3450 5300
-Wire Wire Line
-	3350 5200 3450 5200
+	3350 5200 3400 5200
 Wire Wire Line
 	3450 4900 3350 4900
 Wire Wire Line
-	3350 4700 3450 4700
+	3350 4700 3400 4700
 Wire Wire Line
-	3450 4600 3350 4600
+	3450 4600 3400 4600
 Wire Wire Line
-	3350 4400 3450 4400
+	3350 4400 3400 4400
 Wire Wire Line
-	3450 4300 3350 4300
+	3450 4300 3400 4300
 Wire Wire Line
-	3350 4200 3450 4200
+	3350 4200 3400 4200
 Wire Wire Line
-	3450 4100 3350 4100
+	3450 4100 3400 4100
 Wire Wire Line
-	3350 4000 3450 4000
+	3350 4000 3400 4000
 Wire Wire Line
-	3450 3900 3350 3900
+	3450 3900 3400 3900
 Wire Wire Line
-	3350 3800 3450 3800
+	3350 3800 3400 3800
 Wire Wire Line
-	3450 3700 3350 3700
+	3450 3700 3400 3700
 Wire Wire Line
 	3450 3500 3400 3500
 Wire Wire Line
 	3350 3400 3400 3400
 Wire Wire Line
-	3450 3200 3350 3200
-Wire Wire Line
 	3350 3100 5050 3100
 Wire Wire Line
-	3450 3000 3350 3000
-Wire Wire Line
-	3350 2900 3450 2900
+	4300 3000 4200 3000
 Wire Wire Line
 	3550 2500 3450 2500
 Wire Wire Line
@@ -1013,9 +984,6 @@ Text HLabel 5050 3350 3    50   Input ~ 0
 backlight
 Wire Wire Line
 	5050 3350 5050 3100
-Connection ~ 5050 3100
-Wire Wire Line
-	5050 3100 5200 3100
 Text HLabel 2800 7050 0    50   Input ~ 0
 backlight
 Wire Wire Line
@@ -1023,23 +991,18 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x01_Female J28
 U 1 1 5E250B1F
-P 3800 6200
-F 0 "J28" H 3827 6226 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 3827 6135 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 3800 6200 50  0001 C CNN
-F 3 "~" H 3800 6200 50  0001 C CNN
-	1    3800 6200
-	-1   0    0    1   
+P 10250 1050
+F 0 "J28" H 10277 1076 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10277 985 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 10250 1050 50  0001 C CNN
+F 3 "~" H 10250 1050 50  0001 C CNN
+	1    10250 1050
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5900 5500 6400 5500
 Wire Wire Line
-	6400 5500 6400 5000
-Wire Wire Line
-	6400 5000 6200 5000
-Wire Wire Line
 	3350 5100 3800 5100
-Connection ~ 6400 5500
 $Comp
 L Switch:SW_Push SW5
 U 1 1 5E2A4AED
@@ -1114,7 +1077,6 @@ Text HLabel 6650 5000 2    50   Input ~ 0
 col_13
 Wire Wire Line
 	6650 5000 6550 5000
-Connection ~ 6400 5000
 Text HLabel 3800 5100 2    50   Input ~ 0
 col_13
 Text HLabel 5300 4950 0    50   Input ~ 0
@@ -1150,17 +1112,8 @@ Wire Wire Line
 Connection ~ 4650 2800
 Wire Wire Line
 	4650 2800 4850 2800
-Text HLabel 4850 2100 1    50   Input ~ 0
+Text HLabel 3500 2900 2    50   Input ~ 0
 row_4
-Wire Wire Line
-	4850 2100 4850 2400
-Wire Wire Line
-	4850 2400 4450 2400
-Wire Wire Line
-	4450 2400 4450 2900
-Connection ~ 4450 2900
-Wire Wire Line
-	4450 2900 4850 2900
 $Comp
 L Device:CP C5
 U 1 1 5E2023DE
@@ -1205,8 +1158,6 @@ Wire Wire Line
 	5300 6500 6400 6500
 Wire Wire Line
 	5900 6650 5900 6400
-Wire Wire Line
-	5900 6000 5900 5850
 Wire Wire Line
 	6400 6000 6400 6100
 Wire Wire Line
@@ -1340,7 +1291,7 @@ Wire Wire Line
 Text HLabel 3950 2200 1    50   Input ~ 0
 row_1
 Wire Wire Line
-	3950 2200 3950 2900
+	3950 2200 3950 2300
 Connection ~ 3950 2900
 Text HLabel 9250 3200 0    50   Input ~ 0
 row_1
@@ -1446,7 +1397,6 @@ Wire Wire Line
 	11000 1850 11000 2000
 Wire Wire Line
 	11000 2000 10850 2000
-Connection ~ 4000 6200
 Wire Wire Line
 	5600 4100 6000 4100
 Connection ~ 6000 4100
@@ -1465,7 +1415,7 @@ Wire Wire Line
 	6400 4400 6800 4400
 Connection ~ 6800 4400
 Wire Wire Line
-	6800 4400 7200 4400
+	6800 4400 7100 4400
 $Comp
 L Connector:Conn_01x01_Female J38
 U 1 1 5E241387
@@ -1623,7 +1573,7 @@ Connection ~ 5000 1550
 Wire Wire Line
 	5000 1550 5100 1550
 Wire Wire Line
-	4900 850  4900 1100
+	4900 850  4900 950 
 $Comp
 L power:+5V #PWR014
 U 1 1 5E44CCF6
@@ -1638,7 +1588,7 @@ $EndComp
 Text HLabel 7200 4400 2    50   Input ~ 0
 BL_cathode
 Wire Wire Line
-	9900 1250 10350 1250
+	9900 1250 10250 1250
 $Comp
 L Connector:Conn_01x01_Female J47
 U 1 1 5E4B4235
@@ -1674,8 +1624,6 @@ Wire Wire Line
 Connection ~ 5900 7150
 Wire Wire Line
 	5900 7150 5900 7250
-Wire Wire Line
-	3950 2900 4450 2900
 Wire Wire Line
 	6650 6500 6400 6500
 Wire Wire Line
@@ -1724,28 +1672,6 @@ F 3 "~" H 6100 7150 50  0001 C CNN
 	1    6100 7150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x01_Female J42
-U 1 1 5E51ED00
-P 5300 7600
-F 0 "J42" H 5327 7626 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 5327 7535 50  0001 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5300 7600 50  0001 C CNN
-F 3 "~" H 5300 7600 50  0001 C CNN
-	1    5300 7600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5300 7400 5300 6800
-Wire Wire Line
-	5300 6800 5650 6800
-Wire Wire Line
-	5650 6800 5650 5850
-Wire Wire Line
-	5650 5850 5900 5850
-Connection ~ 5900 5850
-Wire Wire Line
-	5900 5850 5900 5500
 Wire Wire Line
 	5300 4950 5300 5550
 Wire Wire Line
@@ -1784,10 +1710,8 @@ F 3 "~" H 6550 7400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6550 7200 6550 5000
+	6550 7200 6550 5500
 Connection ~ 6550 5000
-Wire Wire Line
-	6550 5000 6400 5000
 $Comp
 L Connector:Conn_01x01_Female J48
 U 1 1 5E66EEDD
@@ -1802,4 +1726,258 @@ $EndComp
 Connection ~ 4500 950 
 Wire Wire Line
 	4500 950  4500 1050
+Wire Wire Line
+	5900 5500 5900 6000
+Wire Wire Line
+	6200 5000 6550 5000
+Wire Wire Line
+	6400 5500 6550 5500
+Connection ~ 6400 5500
+Connection ~ 6550 5500
+Wire Wire Line
+	6550 5500 6550 5000
+Text HLabel 4200 2350 1    50   Input ~ 0
+row_5
+Wire Wire Line
+	4200 2350 4200 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 3000 3350 3000
+Text HLabel 3900 3150 2    50   Input ~ 0
+col_0
+Text HLabel 3900 3750 2    50   Input ~ 0
+col_3
+Wire Wire Line
+	3900 3750 3400 3750
+Wire Wire Line
+	3400 3750 3400 3700
+Connection ~ 3400 3700
+Wire Wire Line
+	3400 3700 3350 3700
+Text HLabel 3900 3850 2    50   Input ~ 0
+col_4
+Text HLabel 3900 3950 2    50   Input ~ 0
+col_5
+Text HLabel 3900 4050 2    50   Input ~ 0
+col_6
+Text HLabel 3900 4150 2    50   Input ~ 0
+col_7
+Text HLabel 3900 4250 2    50   Input ~ 0
+col_8
+Text HLabel 3900 4350 2    50   Input ~ 0
+col_9
+Text HLabel 3900 4450 2    50   Input ~ 0
+col_10
+Text HLabel 3900 4800 2    50   Input ~ 0
+col_11
+Text HLabel 3850 5250 2    50   Input ~ 0
+col_14
+Text HLabel 3850 5350 2    50   Input ~ 0
+col_15
+Wire Wire Line
+	3850 5250 3400 5250
+Wire Wire Line
+	3850 5350 3400 5350
+Wire Wire Line
+	3900 4800 3450 4800
+Wire Wire Line
+	3450 4800 3450 4900
+Connection ~ 3450 4900
+Wire Wire Line
+	3900 3850 3400 3850
+Wire Wire Line
+	3400 3850 3400 3800
+Connection ~ 3400 3800
+Wire Wire Line
+	3400 3800 3450 3800
+Wire Wire Line
+	3900 3950 3400 3950
+Wire Wire Line
+	3400 3950 3400 3900
+Connection ~ 3400 3900
+Wire Wire Line
+	3400 3900 3350 3900
+Wire Wire Line
+	3900 4050 3400 4050
+Wire Wire Line
+	3400 4050 3400 4000
+Connection ~ 3400 4000
+Wire Wire Line
+	3400 4000 3450 4000
+Wire Wire Line
+	3900 4150 3400 4150
+Wire Wire Line
+	3400 4150 3400 4100
+Connection ~ 3400 4100
+Wire Wire Line
+	3400 4100 3350 4100
+Wire Wire Line
+	3900 4250 3400 4250
+Wire Wire Line
+	3400 4250 3400 4200
+Connection ~ 3400 4200
+Wire Wire Line
+	3400 4200 3450 4200
+Wire Wire Line
+	3900 4350 3400 4350
+Wire Wire Line
+	3400 4350 3400 4300
+Connection ~ 3400 4300
+Wire Wire Line
+	3400 4300 3350 4300
+Wire Wire Line
+	3900 4450 3400 4450
+Wire Wire Line
+	3400 4450 3400 4400
+Connection ~ 3400 4400
+Wire Wire Line
+	3400 4400 3450 4400
+Wire Wire Line
+	3950 2900 4850 2900
+Wire Wire Line
+	3500 2900 3350 2900
+Text HLabel 3900 4550 2    50   Input ~ 0
+unused_1
+Text HLabel 3900 4650 2    50   Input ~ 0
+unused_2
+Wire Wire Line
+	3900 4550 3400 4550
+Wire Wire Line
+	3400 4550 3400 4600
+Connection ~ 3400 4600
+Wire Wire Line
+	3400 4600 3350 4600
+Wire Wire Line
+	3900 4650 3400 4650
+Wire Wire Line
+	3400 4650 3400 4700
+Connection ~ 3400 4700
+Wire Wire Line
+	3400 4700 3450 4700
+Wire Wire Line
+	3350 5300 3400 5300
+Wire Wire Line
+	3350 5400 3400 5400
+Wire Wire Line
+	3400 5350 3400 5300
+Connection ~ 3400 5300
+Wire Wire Line
+	3400 5300 3450 5300
+Wire Wire Line
+	3400 5250 3400 5200
+Connection ~ 3400 5200
+Wire Wire Line
+	3400 5200 3450 5200
+Text HLabel 3850 5450 2    50   Input ~ 0
+unused_3
+Wire Wire Line
+	3850 5450 3400 5450
+Wire Wire Line
+	3400 5450 3400 5400
+Connection ~ 3400 5400
+Wire Wire Line
+	3400 5400 3450 5400
+Wire Wire Line
+	3350 3200 3400 3200
+Wire Wire Line
+	3900 3150 3400 3150
+Wire Wire Line
+	3400 3150 3400 3200
+Connection ~ 3400 3200
+Wire Wire Line
+	3400 3200 4350 3200
+Connection ~ 10250 1250
+Wire Wire Line
+	10250 1250 10350 1250
+$Comp
+L Connector:Conn_01x01_Female J3
+U 1 1 5E463265
+P 7100 4200
+F 0 "J3" H 7127 4226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 7127 4135 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 7100 4200 50  0001 C CNN
+F 3 "~" H 7100 4200 50  0001 C CNN
+	1    7100 4200
+	0    -1   -1   0   
+$EndComp
+Connection ~ 7100 4400
+Wire Wire Line
+	7100 4400 7200 4400
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5E464CDB
+P 3600 2300
+F 0 "J5" H 3627 2326 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 3627 2235 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 3600 2300 50  0001 C CNN
+F 3 "~" H 3600 2300 50  0001 C CNN
+	1    3600 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 2300 3950 2300
+Connection ~ 3950 2300
+Wire Wire Line
+	3950 2300 3950 2900
+$Comp
+L Connector:Conn_01x01_Female J42
+U 1 1 5E47CAB7
+P 4000 6000
+F 0 "J42" H 4027 6026 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 4027 5935 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 4000 6000 50  0001 C CNN
+F 3 "~" H 4000 6000 50  0001 C CNN
+	1    4000 6000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4000 6200
+$Comp
+L Connector:Conn_01x01_Female J49
+U 1 1 5E47E67E
+P 10250 2200
+F 0 "J49" H 10277 2226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 10277 2135 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 10250 2200 50  0001 C CNN
+F 3 "~" H 10250 2200 50  0001 C CNN
+	1    10250 2200
+	0    1    1    0   
+$EndComp
+Connection ~ 10250 2000
+$Comp
+L Connector:Conn_01x01_Female J50
+U 1 1 5E47E812
+P 11000 2200
+F 0 "J50" H 11027 2226 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 11027 2135 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 11000 2200 50  0001 C CNN
+F 3 "~" H 11000 2200 50  0001 C CNN
+	1    11000 2200
+	0    1    1    0   
+$EndComp
+Connection ~ 11000 2000
+$Comp
+L Connector:Conn_01x01_Female J51
+U 1 1 5E4802C4
+P 5100 950
+F 0 "J51" H 5127 976 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 5127 885 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 5100 950 50  0001 C CNN
+F 3 "~" H 5100 950 50  0001 C CNN
+	1    5100 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 950 
+Wire Wire Line
+	4900 950  4900 1100
+$Comp
+L Connector:Conn_01x01_Female J52
+U 1 1 5E480D5F
+P 9600 750
+F 0 "J52" H 9627 776 50  0000 L CNN
+F 1 "Conn_01x01_Female" H 9627 685 50  0001 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x01_Drill0.8mm" H 9600 750 50  0001 C CNN
+F 3 "~" H 9600 750 50  0001 C CNN
+	1    9600 750 
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
